@@ -1,13 +1,28 @@
+import static java.lang.System.out.println;
 public class Main {
 
-    static int void main(String[] args) {
-        Freund freund1 = new Freund('Severin', 'Kleesattel', '30.04.1996', Adresse sAdresse = new Adresse(71522, 'Backnang', 'Weinberg'));
-        Kartei kartei1 = new Kartei();
-        freund1.del_freund(this.nachname, this.schlussel);
-        //aenderung
+    public static void main(String[] args) {
 
-        // for (entry in array) {
-        // print array[i] }
+        println("Willkommen zu deiner Freundeskartei! Möchtest du eine eigene Kartei erstellen oder eine kurze Demo bekommen?");
+        println("Gebe K ein fuer das Erstellen und D ein fuer Demo. Q fuer das Beenden");
+
+        String input = System.console().readline();
+
+        if (input == "K") {
+            println("Kartei");
+
+        } else if (input == "D") {
+            println("D");
+
+        } else if (input == "Q") {
+            exit();
+
+        }
+        else {
+            println("Bitte nutze einen der vorgegebenen Befehle");
+        }
+
+
     }
 
 }

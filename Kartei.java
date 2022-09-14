@@ -2,22 +2,20 @@ import java.util.ArrayList;
 
 public class Kartei {
 
-    ArrayList<Freund> freunde = new ArrayList<Freund>();
-    int gesamtZahl = 0;
-
-    Kartei(Freund freund) {
-        gesamtZahl++;
-        ArrayList<Freund> = new freund;
+    Kartei() {
+        ArrayList<Freund> freunde = new ArrayList<>();
     }
 
-    public Freund get_freund(String search_nachname, long int search_schlussel) {
+    public void add_freund(Freund freund) {
+        freunde.add(freund);
+    }
 
-        for (int i = 0; i <= gesamtZahl; i++) {
-            if (ArrayList[i].nachname == search_nachname && ArrayList[i].schlussel == search_schlussel) {
-                Freund found_freund = ArrayList[i];
-                return found_freund;
+    public Freund get_freund(String search_nachname, int search_schlussel) {
+        for (Freund freund : freunde) {
+            if (freund.nachname == search_nachname && freund.schlussel == search_schlussel) {
+                return freund;
                 break;
-            } else if {
+            } else {
                 continue;
             }
         }
@@ -26,24 +24,18 @@ public class Kartei {
 
     }
 
-    //public void set_freund(Freund new_freund)
 
+    public void del_freund(String del_nachname, int del_schlussel) {
 
-    public void del_freund(String del_nachname, long int del_schlussel) {
-
-        for (int i = 0; i <= gesamtZahl; i++) {
-            if (ArrayList[i].nachname == search_nachname && ArrayList[i].schlussel == search_schlussel) {
-                ArrayList[i] = null;
-            } else {
-                continue;
-            }
+        if (freunde.remove(get_freund(del_nachname, del_schlussel)) {
+            System.out.println("Freund erfolgreich geloescht.") }
+        else {
+            System.out.println("Freund nicht in der Kartei oder schon geloescht.");
         }
-
-        System.out.println("Freund nicht in der Kartei oder schon geloescht.");
     }
 
     public int get_gesamtZahl() {
-        return gesamtZahl;
+        return freunde.size();
     }
 
 }

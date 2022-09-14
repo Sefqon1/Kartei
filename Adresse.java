@@ -12,6 +12,7 @@ public class Adresse {
         this.strasse = strasse;
     }
 
+    //get set plz
     public int get_plz() {
         return plz;
     }
@@ -20,6 +21,7 @@ public class Adresse {
         this.plz = new_plz;
     }
 
+    //get set ort
     public String get_ort() {
         return ort;
     }
@@ -28,6 +30,7 @@ public class Adresse {
         this.ort = new_ort;
     }
 
+    //get set strasse
     public String get_strasse() {
         return strasse;
     }
@@ -35,7 +38,4 @@ public class Adresse {
     public void set_strasse(String new_strasse) {
         this.strasse = new_strasse;
     }
-
-
-
 }
