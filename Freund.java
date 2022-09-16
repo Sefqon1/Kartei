@@ -8,64 +8,57 @@ public class Freund {
     private String geburtsdatum;
     private Adresse adresse;
 
-    public Freund(String vorname, String nachname, String geburtsdatum, Adresse adresse) {
-        //Increments the key after asigning it to the new object attribute.
-        //All friends will have concurrent keys.
-        //Problem: Inefficiency in case of deletion. - Wasted memory
+    public Freund(String vorname, String nachname, String Geburtsdatum) {
         this.schlussel = counter;
         counter++;
+
+        this.vorname = vorname;
         this.nachname = nachname;
         this.geburtsdatum = geburtsdatum;
-        this.adresse = adresse;
     }
 
 
-    public int get_schlussel() {
+
+
+    public int getSchlussel() {
         return schlussel;
     }
     //get set vorname
-    public String get_vorname() {
+    public String getVorname() {
         return vorname;
     }
 
-    public void set_vorname(String new_vorname) {
-        this.vorname = new_vorname;
+    public void setVorname(String newVorname) {
+        this.vorname = newVorname;
     }
     // get set nachname
-    public String get_nachname() {
+    public String getNachname() {
         return nachname;
     }
 
-    public void set_nachname(String new_nachname) {
-        this.nachname = new_nachname;
+    public void setNachname(String newNachname) {
+        this.nachname = newNachname;
     }
     //get set geburtsdatum
-    public String get_geburtsdatum() {
+    public String getGeburtsdatum() {
         return geburtsdatum;
     }
 
-    public void set_geburtsdatum(String new_geburtsdatum) {
+    public void setGeburtsdatum(String newGeburtsdatum) {
         this.geburtsdatum = geburtsdatum;
     }
 
     //get set adresse
-    public Adresse get_adresse() {
+    public Adresse getAdresse() {
         return adresse;
     }
 
-    public void set_adresse(Adresse new_adresse) {
-        this.adresse = new_adresse;
+    public void setAdresse(Adresse newAdresse) {
+
+        this.adresse = newAdresse;
     }
 
 
-     public static void main(String[] args) {
-        Adresse adresse1 = new Adresse(71522, "Backnang", "Vorderer Weinberg 25");
-        Freund severin = new Freund("Severin", "Kleesattel", "30.04.1996", adresse1);
-        Freund peter = new Freund("Severin", "Kleesattel", "30.04.1996", adresse1);
 
-        System.out.println(severin.schlussel + " " + peter.schlussel);
-
-
-     }
 
 }

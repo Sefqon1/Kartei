@@ -4,8 +4,6 @@ public class Adresse {
     public String ort;
     public String strasse;
 
-    //Konstruktor fuer Fall, dass keine Parameter
-
     public Adresse(int plz, String ort, String strasse) {
         this.plz = plz;
         this.ort = ort;
@@ -13,29 +11,29 @@ public class Adresse {
     }
 
     //get set plz
-    public int get_plz() {
+    public int getPlz() {
         return plz;
     }
 
-    public void set_plz(int new_plz) {
-        this.plz = new_plz;
+    public void setPlz(int newPlz) {
+        this.plz = newPlz;
     }
 
     //get set ort
-    public String get_ort() {
+    public String getOrt() {
         return ort;
     }
 
-    public void set_ort(String new_ort) {
-        this.ort = new_ort;
+    public void setOrt(String newOrt) {
+        this.ort = newOrt;
     }
 
     //get set strasse
-    public String get_strasse() {
+    public String getStrasse() {
         return strasse;
     }
 
-    public void set_strasse(String new_strasse) {
-        this.strasse = new_strasse;
+    public void setStrasse(String newStrasse) {
+        this.strasse = newStrasse;
     }
 }

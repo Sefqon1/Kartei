@@ -1,26 +1,18 @@
-import static java.lang.System.out.println;
+
 public class Main {
 
+
+
+    //Exception handling
     public static void main(String[] args) {
 
-        println("Willkommen zu deiner Freundeskartei! Möchtest du eine eigene Kartei erstellen oder eine kurze Demo bekommen?");
-        println("Gebe K ein fuer das Erstellen und D ein fuer Demo. Q fuer das Beenden");
+        Kartei meineKartei = new Kartei();
 
-        String input = System.console().readline();
+        Freund severin = new FreundBuilder().withName("Severin", "Kleesattel").withAdresse(71522, "Backnang", "Vorderer Weinberg").build();
 
-        if (input == "K") {
-            println("Kartei");
+        System.out.println(severin.getVorname() + " " + severin.getAdresse().getPlz());
+        System.out.println(severin.getGeburtsdatum());
 
-        } else if (input == "D") {
-            println("D");
-
-        } else if (input == "Q") {
-            exit();
-
-        }
-        else {
-            println("Bitte nutze einen der vorgegebenen Befehle");
-        }
 
 
     }

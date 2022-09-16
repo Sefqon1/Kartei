@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fdf8c02-9d38-4f15-802c-aa09814ef560" name="Changes" comment="">
+    <list default="true" id="2fdf8c02-9d38-4f15-802c-aa09814ef560" name="Changes" comment="Fixed Main.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Adresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Adresse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freund.class" beforeDir="false" afterPath="$PROJECT_DIR$/Freund.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Freund.java" beforeDir="false" afterPath="$PROJECT_DIR$/Freund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kartei.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kartei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2EIYcLxIrrFsAONyRCccth9AduN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -30,13 +39,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sefqon1/Desktop/AKAD/1 JAV01/Kartei&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sefqon1/Desktop/AKAD/1 JAV01/Kartei",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662284645994</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fixed Main.java">
+      <created>1663158771139</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663158771139</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,5 +90,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed Main.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Main.java" />
   </component>
 </project>
