@@ -29,8 +29,10 @@ public class FreundBuilder {
     }
 
     public Freund build() {
+
         Freund freund = new Freund(this.vorname, this.nachname, this.geburtsdatum);
         freund.setAdresse(this.adresse);
+        System.out.println(freund.getVorname() + " erfolgreich hinzugefügt." + "  Schlüssel Nummer: "+ freund.getSchlussel() );
 
         return freund;
     }

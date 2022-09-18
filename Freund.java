@@ -8,7 +8,7 @@ public class Freund {
     private String geburtsdatum;
     private Adresse adresse;
 
-    public Freund(String vorname, String nachname, String Geburtsdatum) {
+    public Freund(String vorname, String nachname, String geburtsdatum) {
         this.schlussel = counter;
         counter++;
 
@@ -25,7 +25,14 @@ public class Freund {
     }
     //get set vorname
     public String getVorname() {
-        return vorname;
+        String nullReturnCatch = "Kein Vorname hinterlegt ";
+
+        if (vorname != null) {
+            return vorname;
+        }
+
+        return nullReturnCatch;
+
     }
 
     public void setVorname(String newVorname) {
@@ -33,15 +40,31 @@ public class Freund {
     }
     // get set nachname
     public String getNachname() {
-        return nachname;
+        String nullReturnCatch = " Kein Nachname hinterlegt ";
+
+        if (nachname != null) {
+            return nachname;
+
+        }
+
+        return nullReturnCatch;
     }
+
 
     public void setNachname(String newNachname) {
         this.nachname = newNachname;
     }
     //get set geburtsdatum
     public String getGeburtsdatum() {
-        return geburtsdatum;
+
+        String nullReturnCatch = " Kein Geburtsdatum hinterlegt ";
+
+        if (geburtsdatum != null) {
+            return geburtsdatum;
+
+        }
+
+        return nullReturnCatch;
     }
 
     public void setGeburtsdatum(String newGeburtsdatum) {
@@ -50,12 +73,17 @@ public class Freund {
 
     //get set adresse
     public Adresse getAdresse() {
-        return adresse;
+
+        Adresse nullReturnCatch = new Adresse(0000, " Kein Ort hinterlegt. ", " Keine Strasse hinterlegt. ");
+
+        if (adresse != null) {
+            return adresse;
+        }
+        return nullReturnCatch;
     }
 
     public void setAdresse(Adresse newAdresse) {
-
-        this.adresse = newAdresse;
+            this.adresse = newAdresse;
     }
 
 

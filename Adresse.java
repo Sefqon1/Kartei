@@ -21,7 +21,7 @@ public class Adresse {
 
     //get set ort
     public String getOrt() {
-        return ort;
+            return ort;
     }
 
     public void setOrt(String newOrt) {
@@ -30,7 +30,8 @@ public class Adresse {
 
     //get set strasse
     public String getStrasse() {
-        return strasse;
+            return strasse;
+
     }
 
     public void setStrasse(String newStrasse) {

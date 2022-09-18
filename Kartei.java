@@ -5,35 +5,36 @@ public class Kartei {
     ArrayList<Freund> freunde = new ArrayList<>();
 
     public void addFreund(Freund freund) {
+
         freunde.add(freund);
     }
 
-   /* public Freund get_freund(String search_nachname, int search_schlussel) {
+   public Freund getFreund(String searchNachname, int searchSchlussel) {
+
+        Freund gesuchterFreund = null;
         for (Freund freund : freunde) {
-            if (freund.nachname.search_nachname.toLowerCase() == search_nachname.toLowerCase() && freund.schlussel == search_schlussel) {
-                return freund;
-                break;
-            } else {
-                continue;
+;
+            if (freund.getNachname().equalsIgnoreCase(searchNachname) && freund.getSchlussel() == searchSchlussel)
+                gesuchterFreund = freund;
             }
-        }
-        System.out.println("Freund nicht in der Kartei.");
 
-
+        return gesuchterFreund;
     }
 
+    public void delFreund(String delNachname, int delSchlussel) {
 
-    public void del_freund(String del_nachname, int del_schlussel) {
-
-        if (freunde.remove(get_freund(del_nachname, del_schlussel))) {
-            System.out.println("Freund erfolgreich geloescht."); }
+        if (freunde.remove(getFreund(delNachname, delSchlussel))) {
+            System.out.println("Freund " + delNachname + " erfolgreich geloescht."); }
         else {
             System.out.println("Freund nicht in der Kartei oder schon geloescht.");
         }
-    } */
+    }
 
     public int getGesamtZahl() {
-        return freunde.size();
+
+        int gesamtZahl = freunde.size();
+
+        return gesamtZahl;
     }
 
 }

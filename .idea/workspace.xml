@@ -7,7 +7,11 @@
       <change beforePath="$PROJECT_DIR$/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Adresse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Freund.class" beforeDir="false" afterPath="$PROJECT_DIR$/Freund.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Freund.java" beforeDir="false" afterPath="$PROJECT_DIR$/Freund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FreundBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/FreundBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FreundBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/FreundBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kartei.class" beforeDir="false" afterPath="$PROJECT_DIR$/Kartei.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kartei.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kartei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,16 +43,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/sefqon1/Desktop/AKAD/1 JAV01/Kartei",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sefqon1/Desktop/AKAD/1 JAV01/Kartei&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
