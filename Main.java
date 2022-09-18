@@ -28,7 +28,7 @@ public class Main {
 
 
         meineKartei.delFreund("Zwegat", 2);
-        meineKartei.delFreund(null, 1);
+        meineKartei.delFreund("keinnachname", 1);
 
         for (int i = 0; i < meineKartei.freunde.size(); i++ ) {
             System.out.println("Freund Nr: " + i + " mit Schlussel " + meineKartei.freunde.get(i).getSchlussel() + " ist " + meineKartei.freunde.get(i).getVorname() + " " + meineKartei.freunde.get(i).getNachname() +

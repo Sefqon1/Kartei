@@ -25,7 +25,7 @@ public class Freund {
     }
     //get set vorname
     public String getVorname() {
-        String nullReturnCatch = "Kein Vorname hinterlegt ";
+        String nullReturnCatch = "KeinVorname ";
 
         if (vorname != null) {
             return vorname;
@@ -40,7 +40,7 @@ public class Freund {
     }
     // get set nachname
     public String getNachname() {
-        String nullReturnCatch = " Kein Nachname hinterlegt ";
+        String nullReturnCatch = "KeinNachname";
 
         if (nachname != null) {
             return nachname;
@@ -57,7 +57,7 @@ public class Freund {
     //get set geburtsdatum
     public String getGeburtsdatum() {
 
-        String nullReturnCatch = " Kein Geburtsdatum hinterlegt ";
+        String nullReturnCatch = "KeinGeburtsdatum";
 
         if (geburtsdatum != null) {
             return geburtsdatum;

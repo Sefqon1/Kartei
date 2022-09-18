@@ -24,7 +24,7 @@ public class Kartei {
     public void delFreund(String delNachname, int delSchlussel) {
 
         if (freunde.remove(getFreund(delNachname, delSchlussel))) {
-            System.out.println("Freund " + delNachname + " erfolgreich geloescht."); }
+            System.out.println(" Name: " + delNachname + ", Schlüssel: " + delSchlussel + "- erfolgreich gelöscht"); }
         else {
             System.out.println("Freund nicht in der Kartei oder schon geloescht.");
         }
