@@ -21,3 +21,32 @@ This will be quick overview of future improvements that I have planned. These ar
 
 #### Current Implementation 
 
+*Explanation*
+
+- Class Kartei
+- Class Freund
+- Class Adresse
+- Class FreundBuilder
+
+- Class Main
+
+
+
+
+Following code returns following things
+
+``` 
+
+Kartei fooKartei = new Kartei();
+
+Freund x = new FreundBuilder().withName("X", "Y").withGeburtsdatum("99.99.9999").withAdresse(9999, "XYZ", "ZYX"). build();
+
+fooKartei.addFreund(x);
+
+System.out.println 
+
+etc...
+``` 
+
+*Picture of sample output*
+
