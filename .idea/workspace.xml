@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2fdf8c02-9d38-4f15-802c-aa09814ef560" name="Changes" comment="Fixed Main.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Adresse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Adresse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Freund.class" beforeDir="false" afterPath="$PROJECT_DIR$/Freund.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Freund.java" beforeDir="false" afterPath="$PROJECT_DIR$/Freund.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FreundBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/FreundBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FreundBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/FreundBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kartei.class" beforeDir="false" afterPath="$PROJECT_DIR$/Kartei.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kartei.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kartei.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
