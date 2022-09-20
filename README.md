@@ -25,30 +25,62 @@ The class **Kartei** creates an ArrayList when instantiated. Stored inside are t
 
 **Freund** is not instantiated by the user using it's constructor directly, but using the class **FreundBuilder**. The class follows the builder design pattern. It is more user friendly and allows for the entire object to be built, even if certain attributes are missing. As those are then filled with *null* values, they have to be caught when using any ``` get() ``` method. 
 
-- Class Kartei
-- Class Freund
-- Class Adresse
-- Class FreundBuilder
-
-- Class Main
+The main class is not included in this repo, because it is irrelevant to the rest of the code. Some sample inputs and the resulting outputs are found below.
 
 
+#### Sample input
 
+``` 
+        //Building address book:
+        Kartei fooKartei = new Kartei();
+        
+        
+        //Building new friend:
+        Freund fooBar = new FreundBuilder().withName("Foo", "Bar").withGeburtsdatum("19.09.1990").withAdresse(9999, "fooTown", "Bar Strasse").build();
 
-Following code returns following things
+        //Adding friend to address book:
+        fooKartei.addFreund(fooBar);
+
+        //Printing friend
+        System.out.println("Name: " + fooKartei.getFreund("bar", 1).getVorname() + ", Birthday " + fooKartei.getFreund("bar", 1).getGeburtsdatum() + ",   City " + fooKartei.getFreund("bar", 1).getAdresse().getOrt());
+
+        //Check amount of people saved
+        System.out.println("Amount of contacts in this address book: " + fooKartei.getGesamtZahl());
+
+        //Attempt to delete non-existant entry: 
+        fooKartei.delFreund("Peter", 3);
+
+        //Confirm no entry has been deleted 
+        System.out.println("Amount of contacts in this address book: " + fooKartei.getGesamtZahl());
+
+        //Deletion of existing entry: 
+        fooKartei.delFreund("bar", 1);
+        
+        
+        //Confirm entry has been deleted 
+        System.out.println("Friends in this address book: " + fooKartei.getGesamtZahl());
+``` 
+
+#### Sample Output
 
 ``` 
 
-Kartei fooKartei = new Kartei();
+//Building new friend:
+/Foo/ erfolgreich erstellt.  Schlüssel Nummer: 1
 
-Freund x = new FreundBuilder().withName("X", "Y").withGeburtsdatum("99.99.9999").withAdresse(9999, "XYZ", "ZYX"). build();
+//Printing friend after they have been added: 
+Name: Foo, Birthday 19.09.1990, City fooTown
 
-fooKartei.addFreund(x);
+Amount of contacts in this address book: 1
 
-System.out.println 
+//Attempt to delete non-existant entry: 
+Freund nicht in der Kartei oder schon geloescht.
 
-etc...
-``` 
+Amount of contacts in this address book: 1
 
-*Picture of sample output*
+//Deletion of existing entry: 
+Name: bar, Schlüssel: 1- erfolgreich gelöscht
 
+Friends in this address book: 0
+
+```
