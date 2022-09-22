@@ -14,7 +14,7 @@ Therefore it is mainly for myself as version control while I am taking this proj
 
 This will be quick overview of future improvements that I have planned. These are purely for my own interest.
 
-- [ x ] Implementing a hash map improve on the current search time of (O)N of the ``` getFreund()``` method. 
+- [x] Implementing a hash map improve on the current search time of (O)N of the ``` getFreund()``` method. 
 - [ ] Using JDBC to connect the address book to an SQL database to make changes, additions etc. permanent on disk rather than temporary in memory. (The addition will be found in the *JDBC* branch of this repo.)
 - [ ] Refactoring the code and add comments for better understanding (famous last words lol). 
 
