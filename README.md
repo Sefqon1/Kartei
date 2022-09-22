@@ -84,3 +84,10 @@ Name: bar, Schlüssel: 1- erfolgreich gelöscht
 Friends in this address book: 0
 
 ```
+
+
+# Sources
+Following ressources have been used to build this project:
+
+- Grundkurs JAVA Von den Grundlagen bis zu Datenbank- und Netzanwendungen (by Dietmar Abts)
+- Builder Design Pattern in Java (By Pankaj | https://www.digitalocean.com/community/tutorials/builder-design-pattern-in-java)
