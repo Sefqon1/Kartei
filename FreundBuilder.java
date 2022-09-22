@@ -32,7 +32,7 @@ public class FreundBuilder {
 
         Freund freund = new Freund(this.vorname, this.nachname, this.geburtsdatum);
         freund.setAdresse(this.adresse);
-        System.out.println("/"+freund.getVorname()+"/"+ " erfolgreich hinzugefügt." + "  Schlüssel Nummer: "+ freund.getSchlussel() );
+        System.out.println(freund.getVorname()+ " erfolgreich erstellt." + "  Schlüssel: "+ freund.getSchlussel());
 
         return freund;
     }

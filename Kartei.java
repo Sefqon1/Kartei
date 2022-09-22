@@ -1,36 +1,37 @@
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Kartei {
 
-    ArrayList<Freund> freunde = new ArrayList<>();
+    HashMap<Integer, Freund> freunde = new HashMap<>();
 
-    public void addFreund(Freund freund) {
+    public void addFreund(int schlussel, Freund freund) {
 
-        freunde.add(freund);
+        freunde.put(schlussel, freund);
+        System.out.println("Freund" + freund.getVorname() + " wurde erfolgreich der Kartei hinzugefügt. " + " Schlüssel: " + freund.getSchlussel());
     }
 
-   public Freund getFreund(String searchNachname, int searchSchlussel) {
+   public Freund getFreund(int schlussel) {
 
-        Freund gesuchterFreund = null;
-        for (Freund freund : freunde) {
-;
-            if (freund.getNachname().equalsIgnoreCase(searchNachname) && freund.getSchlussel() == searchSchlussel)
-                gesuchterFreund = freund;
-            }
+        Freund nullFreund = null;
 
-        return gesuchterFreund;
+        if (freunde.get(schlussel) != null) {
+            return freunde.get(schlussel);
+        }
+
+        return nullFreund;
     }
 
-    public void delFreund(String delNachname, int delSchlussel) {
+    public void delFreund(int schlussel) {
 
-        if (freunde.remove(getFreund(delNachname, delSchlussel))) {
-            System.out.println(" Name: " + delNachname + ", Schlüssel: " + delSchlussel + "- erfolgreich gelöscht"); }
+        Freund removedFreund = freunde.remove(schlussel);
+        if (removedFreund != null) {
+            System.out.println(" Name: " + removedFreund.getVorname() + ", Schlüssel: " + removedFreund.getSchlussel() + "- erfolgreich gelöscht"); }
         else {
             System.out.println("Freund nicht in der Kartei oder schon geloescht.");
         }
     }
 
-    public int getGesamtZahl() {
+    public int getGesamtzahl() {
 
         int gesamtZahl = freunde.size();
 
