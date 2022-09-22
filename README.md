@@ -14,7 +14,7 @@ Therefore it is mainly for myself as version control while I am taking this proj
 
 This will be quick overview of future improvements that I have planned. These are purely for my own interest.
 
-- [ ] Implementing a hash map improve on the current search time of (O)N of the ``` getFreund()``` method. 
+- [ x ] Implementing a hash map improve on the current search time of (O)N of the ``` getFreund()``` method. 
 - [ ] Using JDBC to connect the address book to an SQL database to make changes, additions etc. permanent on disk rather than temporary in memory. (The addition will be found in the *JDBC* branch of this repo.)
 - [ ] Refactoring the code and add comments for better understanding (famous last words lol). 
 
@@ -39,22 +39,22 @@ The main class is not included in this repo, because it is irrelevant to the res
         Freund fooBar = new FreundBuilder().withName("Foo", "Bar").withGeburtsdatum("19.09.1990").withAdresse(9999, "fooTown", "Bar Strasse").build();
 
         //Adding friend to address book:
-        fooKartei.addFreund(fooBar);
+        fooKartei.addFreund(fooBar.getSchlussel(), fooBar);
 
         //Printing friend
-        System.out.println("Name: " + fooKartei.getFreund("bar", 1).getVorname() + ", Birthday " + fooKartei.getFreund("bar", 1).getGeburtsdatum() + ",   City " + fooKartei.getFreund("bar", 1).getAdresse().getOrt());
+        System.out.println("Name: " + fooKartei.getFreund(1).getVorname() + ", Birthday " + fooKartei.getFreund(1).getGeburtsdatum() + ",   City " + fooKartei.getFreund(1).getAdresse().getOrt());
 
         //Check amount of people saved
         System.out.println("Amount of contacts in this address book: " + fooKartei.getGesamtZahl());
 
         //Attempt to delete non-existant entry: 
-        fooKartei.delFreund("Peter", 3);
+        fooKartei.delFreund(3);
 
         //Confirm no entry has been deleted 
         System.out.println("Amount of contacts in this address book: " + fooKartei.getGesamtZahl());
 
         //Deletion of existing entry: 
-        fooKartei.delFreund("bar", 1);
+        fooKartei.delFreund(1);
         
         
         //Confirm entry has been deleted 
