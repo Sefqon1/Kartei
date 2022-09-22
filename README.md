@@ -89,5 +89,5 @@ Friends in this address book: 0
 # Sources
 Following ressources have been used to build this project:
 
-- Grundkurs JAVA Von den Grundlagen bis zu Datenbank- und Netzanwendungen (by Dietmar Abts)
+- Grundkurs JAVA Von den Grundlagen bis zu Datenbank- und Netzanwendungen (by Dietmar Abts | ISBN 978-3-658-30494-2)
 - Builder Design Pattern in Java (By Pankaj | https://www.digitalocean.com/community/tutorials/builder-design-pattern-in-java)
