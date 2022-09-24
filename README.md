@@ -21,7 +21,7 @@ This will be quick overview of future improvements that I have planned. These ar
 
 #### Current Implementation 
 
-The class **Kartei** creates an ArrayList when instantiated. Stored inside are the address book entries. The entries are of type Freund. The **Freund** class describes the friend who is to be stored. It holds a first- and last name, the birtdate as well as the address as attributes. The address itself is implemented as its own seperate class **Adresse**. Address' attributes are a postal code, city name and street name. 
+The class **FreundKartei** creates an ArrayList when instantiated. Stored inside are the address book entries. The entries are of type Freund. The **Freund** class describes the friend who is to be stored. It holds a first- and last name, the birtdate as well as the address as attributes. The address itself is implemented as its own seperate class **Adresse**. Address' attributes are a postal code, city name and street name. 
 
 **Freund** is not instantiated by the user using it's constructor directly, but using the class **FreundBuilder**. The class follows the builder design pattern. It is more user friendly and allows for the entire object to be built, even if certain attributes are missing. As those are then filled with *null* values, they have to be caught when using any ``` get() ``` method. 
 
@@ -32,7 +32,7 @@ The main class is not included in this repo, because it is irrelevant to the res
 
 ``` 
         //Building address book:
-        Kartei fooKartei = new Kartei();
+        FreundKartei fooKartei = new FreundKartei();
         
         
         //Building new friend:
@@ -74,7 +74,7 @@ Name: Foo, Birthday 19.09.1990, City fooTown
 Amount of contacts in this address book: 1
 
 //Attempt to delete non-existant entry: 
-Freund nicht in der Kartei oder schon geloescht.
+Freund nicht in der FreundKartei oder schon geloescht.
 
 Amount of contacts in this address book: 1
 

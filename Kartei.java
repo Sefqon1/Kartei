@@ -1,41 +1,24 @@
 import java.util.HashMap;
 
-public class Kartei {
+public class Kartei<T extends IIdentifizierbar> {
+    HashMap<Integer, T> items = new HashMap<>();
 
-    HashMap<Integer, Freund> freunde = new HashMap<>();
-
-    public void addFreund(int schlussel, Freund freund) {
-
-        freunde.put(schlussel, freund);
-        System.out.println("Freund" + freund.getVorname() + " wurde erfolgreich der Kartei hinzugefügt. " + " Schlüssel: " + freund.getSchlussel());
+    public void add(T item) {
+        items.put(item.getSchlussel(), item);
     }
 
-   public Freund getFreund(int schlussel) {
-
-        Freund nullFreund = null;
-
-        if (freunde.get(schlussel) != null) {
-            return freunde.get(schlussel);
+    public T get(int schlussel) {
+        if (items.containsKey(schlussel)) {
+            return items.get(schlussel);
         }
-
-        return nullFreund;
+        return null;
     }
 
-    public void delFreund(int schlussel) {
-
-        Freund removedFreund = freunde.remove(schlussel);
-        if (removedFreund != null) {
-            System.out.println(" Name: " + removedFreund.getVorname() + ", Schlüssel: " + removedFreund.getSchlussel() + "- erfolgreich gelöscht"); }
-        else {
-            System.out.println("Freund nicht in der Kartei oder schon geloescht.");
-        }
+    public T del(int schlussel) {
+        return items.remove(schlussel);
     }
 
     public int getGesamtzahl() {
-
-        int gesamtZahl = freunde.size();
-
-        return gesamtZahl;
+        return items.size();
     }
-
 }
