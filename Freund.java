@@ -1,4 +1,4 @@
-public class Freund {
+public class Freund implements IIdentifizierbar {
 
     private static int counter = 1;
 
@@ -18,11 +18,10 @@ public class Freund {
     }
 
 
-
-
     public int getSchlussel() {
         return schlussel;
     }
+
     //get set vorname
     public String getVorname() {
         String nullReturnCatch = "KeinVorname ";
@@ -38,6 +37,7 @@ public class Freund {
     public void setVorname(String newVorname) {
         this.vorname = newVorname;
     }
+
     // get set nachname
     public String getNachname() {
         String nullReturnCatch = "KeinNachname";
@@ -54,6 +54,7 @@ public class Freund {
     public void setNachname(String newNachname) {
         this.nachname = newNachname;
     }
+
     //get set geburtsdatum
     public String getGeburtsdatum() {
 
@@ -83,10 +84,8 @@ public class Freund {
     }
 
     public void setAdresse(Adresse newAdresse) {
-            this.adresse = newAdresse;
+        this.adresse = newAdresse;
     }
-
-
 
 
 }
